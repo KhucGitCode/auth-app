@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <button onclick="logout()">Logout</button>
+
+
+
+   <script>
+    function logout() {
+    localStorage.removeItem("token");
+    window.location.href = "index.html";
+  }
+  
+  const token = localStorage.getItem("token");
+
+  if (!token) {
+    alert("Access denied. Please login.");
+    window.location.href = "index.html";
+  }
+
+  fetch("http://localhost:5000/dashboard", {
+    headers: {
+      Authorization: "Bearer " + token
+    }
+  })
+    .then(res => res.json())
+    .then(data => {
+      document.body.innerHTML += `<h2>${data.message}</h2>`;
+    })
+    .catch(() => {
+      alert("Invalid session");
+      localStorage.removeItem("token");
+      window.location.href = "index.html";
+    });
+</script>
+ 
+</body>
+</html>
