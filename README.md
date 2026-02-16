@@ -1,32 +1,28 @@
-# 🔐 Full Stack Authentication App
+# Full Stack Authentication App
 
 A complete authentication system built using **HTML, CSS, JavaScript, Node.js, and Express**.
 This project demonstrates secure user signup, login with JWT, protected routes, and logout functionality.
 
----
+# Live Features
 
-## 🚀 Live Features
+*  User Signup with password hashing (bcrypt)
+*  Secure Login with JWT authentication
+*  Protected Dashboard route
+*  Token stored in localStorage
+*  Session persists on page refresh
+*  Logout functionality
+*  Direct dashboard access blocked without token
+*  Frontend ↔ Backend integration
 
-* 📝 User Signup with password hashing (bcrypt)
-* 🔑 Secure Login with JWT authentication
-* 🛡️ Protected Dashboard route
-* 💾 Token stored in localStorage
-* 🔄 Session persists on page refresh
-* 🚪 Logout functionality
-* ❌ Direct dashboard access blocked without token
-* 🌐 Frontend ↔ Backend integration
+##  Tech Stack
 
----
-
-## 🛠️ Tech Stack
-
-### Frontend
+# Frontend
 
 * HTML5
 * CSS3
 * Vanilla JavaScript
 
-### Backend
+# Backend
 
 * Node.js
 * Express.js
@@ -36,7 +32,7 @@ This project demonstrates secure user signup, login with JWT, protected routes, 
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 auth-app-js/
@@ -55,9 +51,7 @@ auth-app-js/
 └── .gitignore
 ```
 
----
-
-## 🔄 Authentication Flow
+##  Authentication Flow
 
 1. User signs up → password hashed using bcrypt
 2. User logs in → credentials verified
@@ -68,9 +62,9 @@ auth-app-js/
 
 ---
 
-## ▶️ How to Run Locally
+## How to Run Locally
 
-### 🔹 Run Backend
+###  Run Backend
 
 ```bash
 cd backend
@@ -78,7 +72,7 @@ npm install
 node server.js
 ```
 
-### 🔹 Run Frontend
+### Run Frontend
 
 Open frontend files using **Live Server** in VS Code:
 
@@ -87,7 +81,7 @@ frontend/index.html
 ```
 
 
-## 🧠 Key Learning Outcomes
+##  Key Learning Outcomes
 
 * Password hashing and security basics
 * JWT authentication flow
@@ -97,10 +91,10 @@ frontend/index.html
 * Session handling with localStorage
 
 
-## 🔮 Future Improvements
+## Future Improvements
 
-* 🔐 Add refresh tokens
-* 🗄️ Integrate MongoDB
-* 🎨 Improve UI/UX
-* 🌐 Deploy backend and frontend
-* 📱 Make responsive
+*  Add refresh tokens
+*  Integrate MongoDB
+*  Improve UI/UX
+*  Deploy backend and frontend
+*  Make responsive
